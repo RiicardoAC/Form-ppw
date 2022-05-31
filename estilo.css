@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, rgb(45, 182, 152), rgb(13, 114, 84));
+    font-family: sans-serif;
+    margin-left: 37%;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+#fieldset{ 
+    border: 0;
+}
+
+#titulo{
+    margin-left: 5%;
+}
+
+#subtitulo{
+    margin-left: 7.5%;
+}
+
+input{
+    border-radius: 4px;
+}
+
+
+#botao{
+    margin-left: 6%;
+}
+
+.form{
+    margin-left: 9%;
+}
