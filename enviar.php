@@ -1,6 +1,6 @@
 <?php
 
-
+$POST['nome'] = "nome"
 
 
 
