@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <form action="enviar.php" method="post"> 
+    <form action="enviar.php" method="post">
         <fieldset id="fieldset">
-                <h2 id="titulo"> Formulário de Cadastro</h2>
-                <p id="subtitulo">Informe seus dados abaixo.</p><br>
+            <h2 id="titulo"> Formulário de Cadastro</h2>
+            <p id="subtitulo">Informe seus dados abaixo.</p><br>
             <div class="form">
                 <label for="nome"><b>Nome completo: </b></label><br>
                 <input type="text" id="nome" name="nome" required>
                 <br><br>
-                <label for="email" ><b>Email: </b></label><br>
+                <label for="email"><b>Email: </b></label><br>
                 <input type="text" id="email" name="email" required>
                 <br><br>
                 <label for="telefone"><b>Contato:</b></label><br>
@@ -33,7 +33,7 @@
                 <label for="data_nascimento"><b>Data de Nascimento: </b></label>
                 <input type="date" id="data_nascimento" name="data_nascimento">
                 <br><br>
-                <label><b>Quantos irmãos vocês tem?</b></label>
+                <label><b>Quantos irmãos vocês tem? </b></label>
                 <br>
                 <input type="checkbox" id="irmao1" name="irmao[1]" value="um irmão">
                 <label for="irmao1">Apenas um irmão</label>
@@ -43,10 +43,10 @@
                 <br>
                 <input type="checkbox" id="irmao3" name="irmao[3]" value="mais de três irmãos">
                 <label for="irmao3">Mais de três irmãos</label>
-                <br><br><br>
+                <br><br>
                 <input type="submit" id="botao" name="enviar" value="Enviar">
             </div>
-        </fieldset>    
-    </form>   
+        </fieldset>
+    </form>
 </body>
 </html>
