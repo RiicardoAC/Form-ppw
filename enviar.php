@@ -6,6 +6,7 @@ $contato = $_POST['telefone'];
 $genero = $_POST['genero'];
 $data_nascimento = $_POST['data_nascimento'];
 $qtdIrmaos = $_POST['irmao'];
+
 foreach ($qtdIrmaos as $val) {
     $msg .= $val . ", ";
 }

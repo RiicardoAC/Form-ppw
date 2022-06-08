@@ -1,5 +1,4 @@
 <?php
-
     $servidor = "localhost";
     $bdname = "cadastro";
     $usuario = "root";
