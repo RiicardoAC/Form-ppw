@@ -8,45 +8,48 @@
 </head>
 <body>
     <form action="enviar.php" method="post">
-        <fieldset id="fieldset">
-            <h2 id="titulo"> Formulário de Cadastro</h2>
-            <p id="subtitulo">Informe seus dados abaixo.</p><br>
-            <div class="form">
-                <label for="nome"><b>Nome completo: </b></label><br>
-                <input type="text" id="nome" name="nome" required>
-                <br><br>
-                <label for="email"><b>Email: </b></label><br>
-                <input type="text" id="email" name="email" required>
-                <br><br>
-                <label for="telefone"><b>Contato:</b></label><br>
-                <input type="text" id="telefone" name="telefone" required>
-                <br><br>
-                <label for="genero"><b>Gênero: </b></label>
-                <br><br>
-                <input type="radio" id="f" name="genero" value="feminino">
-                <label for="f">Feminino</label>
-                <input type="radio" id="m" name="genero" value="masculino">
-                <label for="m">Masculino</label>
-                <input type="radio" id="o" name="genero" value="Outro">
-                <label for="o">Outro</label>
-                <br><br>
-                <label for="data_nascimento"><b>Data de Nascimento: </b></label>
-                <input type="date" id="data_nascimento" name="data_nascimento">
-                <br><br>
-                <label><b>Quantos irmãos vocês tem? </b></label>
-                <br>
-                <input type="checkbox" id="irmao1" name="irmao[1]" value="um irmão">
-                <label for="irmao1">Apenas um irmão</label>
-                <br>
-                <input type="checkbox" id="irmao2" name="irmao[2]" value="dois irmãos">
-                <label for="irmao2">Dois irmãos</label>
-                <br>
-                <input type="checkbox" id="irmao3" name="irmao[3]" value="mais de três irmãos">
-                <label for="irmao3">Mais de três irmãos</label>
-                <br><br>
-                <input type="submit" id="botao" name="enviar" value="Enviar">
-            </div>
-        </fieldset>
+        <div>
+            <fieldset id="fieldset">
+                <h2 id="titulo"> Formulário de Cadastro</h2>
+                <p id="subtitulo">Informe seus dados abaixo.</p><br>
+                <div class="form">
+                    <label for="nome"><b>Nome completo: </b></label><br>
+                    <input type="text" id="nome" name="nome" required>
+                    <br><br>
+                    <label for="email"><b>Email: </b></label><br>
+                    <input type="text" id="email" name="email" required>
+                    <br><br>
+                    <label for="telefone"><b>Contato:</b></label><br>
+                    <input type="text" id="telefone" name="telefone" required>
+                    <br><br>
+                    <label for="genero"><b>Gênero: </b></label>
+                    <br><br>
+                    <input type="radio" id="f" name="genero" value="feminino">
+                    <label for="f">Feminino</label>
+                    <input type="radio" id="m" name="genero" value="masculino">
+                    <label for="m">Masculino</label>
+                    <input type="radio" id="o" name="genero" value="Outro">
+                    <label for="o">Outro</label>
+                    <br><br>
+                    <label for="data_nascimento"><b>Data de Nascimento: </b></label>
+                    <input type="date" id="data_nascimento" name="data_nascimento">
+                    <br><br>
+                    <label><b>Quantos irmãos vocês tem? </b></label>
+                    <br>
+                    <input type="checkbox" id="irmao1" name="irmao[1]" value="um irmão">
+                    <label for="irmao1">Apenas um irmão</label>
+                    <br>
+                    <input type="checkbox" id="irmao2" name="irmao[2]" value="dois irmãos">
+                    <label for="irmao2">Dois irmãos</label>
+                    <br>
+                    <input type="checkbox" id="irmao3" name="irmao[3]" value="mais de três irmãos">
+                    <label for="irmao3">Mais de três irmãos</label>
+                    <br><br>
+                    <input type="submit" id="botao" name="enviar" value="Enviar">
+                </div>
+            </fieldset>
+        </div>
     </form>
+    <footer><p id="oi">Copyright © 2022</p></footer>
 </body>
 </html>
