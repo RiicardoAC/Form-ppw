@@ -5,7 +5,7 @@
     $data_nascimento = $_POST['data_nascimento'];
     $senha = $_POST['senha'];
 
-    echo "Nome: $nome.";
+    echo "Nome: $nome. <br>";
     echo "Email: $email.";
     echo "Contato: $contato."; 
     echo "Data de nascimento: $data_nascimento.";
