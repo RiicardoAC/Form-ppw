@@ -7,7 +7,7 @@
     $data_nascimento = $_POST['data_nascimento'];
     $senha = $_POST['senha'];
 
-    $sql = "INSERT INTO usuarios(nome, email, contato, nascimento) VALUES ('$nome', '$email', '$contato', '$data_nascimento')";
+    $sql = "INSERT INTO usuarios(nome, email, contato, nascimento, senha) VALUES ('$nome', '$email', '$contato', '$data_nascimento', '$senha')";
 
     if(mysqli_query($conexao, $sql))
         echo 'Cadastrado  com sucesso';
