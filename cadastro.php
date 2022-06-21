@@ -10,7 +10,7 @@
     $sql = "INSERT INTO usuarios(nome, email, contato, nascimento) VALUES ('$nome', '$email', '$contato', '$data_nascimento')";
 
     if(mysqli_query($conexao, $sql))
-        echo 'Cadastrado com sucesso';
+        echo 'Cadastrado  com sucesso';
     else    
         echo "Erro!";
 
