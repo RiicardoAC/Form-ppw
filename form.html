@@ -7,26 +7,26 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" onsubmit="return validacao()">
         <div>
             <fieldset id="fieldset">
                 <h2 id="titulo"> Formulário de Cadastro</h2>
                 <p id="subtitulo">Informe seus dados abaixo.</p><br>
                 <div class="form">
                     <label for="nome"><b>Nome completo: </b></label><br>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" class="campo" name="nome">
                     <br><br>
                     <label for="email"><b>Email: </b></label><br>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" class="campo" name="email">
                     <br><br>
                     <label for="telefone"><b>Contato:</b></label><br>
-                    <input type="text" id="telefone" name="telefone" required>
+                    <input type="text" id="telefone" class="campo" name="telefone" >
                     <br><br>
                     <label for="data_nascimento"><b>Data de Nascimento: </b></label><br>
-                    <input type="date" id="data_nascimento" name="data_nascimento" required>          
+                    <input type="date" id="data_nascimento" class="campo" name="data_nascimento" >          
                     <br><br>
                     <label for="senha"><b>Senha: </b></label><br>
-                    <input type="password" id="senha" name="senha" required>
+                    <input type="password" id="senha" class="campo" name="senha" >
                     <br><br>
                     <input type="submit" id="botao" name="enviar" value="Enviar">
                 </div>
@@ -34,5 +34,25 @@
         </div>
     </form>
     <footer><p id="oi">Copyright © 2022</p></footer>
+    <script type="text/javascript"> 
+        function validacao() {
+                var dados = document.getElementsByClassName("campo")
+                var tamanho = dados.length
+                var vazio = false
+                for (var i = 0; i < tamanho; i++){
+                    if ((dados[i].value == "")){
+                        vazio = true 
+                        break
+                    }
+                }
+                if(vazio){
+                    alert("Por favor, preeencha todos os campos do formulário!")
+                    return false
+                }
+                else{
+                    return true
+                }
+        }   
+    </script>
 </body>
 </html>
