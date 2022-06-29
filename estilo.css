@@ -41,6 +41,10 @@ table {
 	border-radius: 10px;
 }
 
+#botao{
+	margin-left: 75px;
+}
+
 /* Ponto de quebra a partir de 480px de largura */
 @media screen and (min-width: 480px){
 	body{
