@@ -48,13 +48,13 @@ table {
 /* Ponto de quebra a partir de 480px de largura */
 @media screen and (min-width: 480px){
 	body{
-		background-image: linear-gradient(to right, rgb(230, 0, 19), rgb(13, 114, 84));
+		background-image: linear-gradient(to right, rgba(219, 85, 96, 0.801), rgba(216, 114, 100, 0.849));
 	}
 }
 
 /* Ponto de quebra a partir de 768px de largura */
 @media screen and (min-width: 768px){
 	body{
-		background-image: linear-gradient(to right, rgb(121, 9, 185), rgb(13, 114, 84));
+		background-image: linear-gradient(to right, rgba(231, 108, 71, 0.918), rgb(235, 104, 81));
 	}	
 }
